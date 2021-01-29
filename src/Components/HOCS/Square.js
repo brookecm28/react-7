@@ -1,4 +1,6 @@
 import React from 'react'
+import withStyles from './withStyles'
+import withAuth from './withAuth'
 
 const Square = props => {
   return (
@@ -7,4 +9,4 @@ const Square = props => {
     </div>
   )
 }
-export default Square
+export default withAuth(withStyles(Square))
